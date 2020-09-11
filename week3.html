@@ -1,0 +1,116 @@
+<html>
+	<head>
+		<title>Week 3 In-class</title>
+		<style>
+			/* this is a multi-line 
+			CSS comment */
+			// this is a single line
+			/* this is also internal CSS */
+		</style>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		
+		<script>
+			// internal CSS
+			/* this is a multiline 
+			comment */
+			
+			var my_name = "Brock Ellis"; 
+			
+			// dislays some text in the browser's console
+			console.log("This is some text!");
+						
+			// pops open a small dialog to get your attention
+			alert("Check yaself before you wreck yaself.");
+			
+			// prompt asks the user for input
+			// here, we store the user input into a new variable
+			var answer = prompt("Do you prefer African or European Swallows?");
+			
+			// injecting string values into other strings with the plus sign
+			console.log("Your answer " + answer + " was awesome!");
+						
+			// redefine the variable we just created
+			my_name = "@TheBrockEllis";
+			
+			/*
+			* DATA TYPES
+			*/	
+			
+			// string
+			var favorite_game = "DOTA2";
+			
+			// number
+			var hours_played = 1501;
+			var years_played = 3;
+			
+			var weekend_binge = hours_played + 20;	
+			var hours_per_year = hours_played / years_played;
+			
+			var hours_wanted_to_play = hours_played * 3;
+			
+			var remainder = hours_played % years_played;
+			
+			// boolean
+			var am_good_at_game = false;
+			var do_i_always_try_hard = true;
+			
+			var tricky_boolean = "false";
+			var tricky_boolean_2 = "10";
+			
+			// array 
+			var favorite_characters = ["Shadow Shaman", 200, 100, "KotL", 80, "Dazzle", 60];
+			
+			var games = [{name: "Dota2"}, {name: "Halo"}, {name: "Destiny"}];
+			console.log(games[2].name); // "Destiny"
+			
+			// use square brackets to access items in the array
+			// NOTE: arrays are zero-indexed, so they start counting at 0
+			console.log(favorite_characters[4]);
+			
+			// object
+			
+			// smart collection of data
+			// key : value
+			var character_breakdown = {
+				char1: "Shadow Shaman",
+				char1_played: 200,
+				char1_wins: 100,
+				does_try_hard: true,
+				played_days: ["Thursday", "Friday", "Monday"]
+			}
+			
+			// use dot notation for accessing a key
+			// accessing a key will return it's value
+			console.log(character_breakdown.played_days[1]);
+			
+			// EXERCISE!
+			// create an object
+			// create a key that has a value of an array of sub-objects
+			// each sub-object should have one key/string value pair
+			var pizza_places = {
+				favorite: [
+					{
+						name: "Domino's"
+					}, 
+					{
+						name: "Pizza Hut"
+					},
+					{
+						name: "Little Caesars"
+					}
+				] 
+			}
+			
+			console.log(pizza_places.favorite[0].name);
+			
+		</script>
+	</head>
+	<body>
+		<!-- inline CSS (try not to use it)-->
+		<h1 style="color: red;">The best week ever!</h1>
+		
+		
+			
+
+	</body>
+</html>
